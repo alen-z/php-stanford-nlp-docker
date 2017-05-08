@@ -6,7 +6,7 @@
  * Time: 18:42
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 $grammatical_relations = array(
     'acl' => 'clausal modifier of noun',

@@ -22,11 +22,13 @@ RUN apt-get -t jessie-backports install -y "openjdk-8-jre"
 RUN bash -c "wget http://getcomposer.org/composer.phar && mv composer.phar /usr/local/bin/composer"
 RUN chmod +x /usr/local/bin/composer
 
-# Mount local directory
-ADD . /var/www/html
+# Put data into container
+WORKDIR /var/www/html
+RUN git clone https://github.com/alen-z/php-stanford-nlp-docker
 
 # Stanford NLP PHP wrapper
-WORKDIR /var/www/html
 RUN composer install
+
 # Java app
 RUN wget https://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip && unzip stanford-parser-full-2016-10-31.zip
+RUN rm stanford-parser-full-2016-10-31.zip

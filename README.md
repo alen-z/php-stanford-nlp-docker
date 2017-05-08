@@ -1,6 +1,6 @@
 # Stanford NLP Parser PHP wrapper in Docker
 
-## About Stanford Parser
+## About Stanford Parser (https://nlp.stanford.edu/software/lex-parser.html)
 A natural language parser is a program that works out the grammatical structure of sentences, for instance, which groups of words go together (as "phrases") and which words are the subject or object of a verb. Probabilistic parsers use knowledge of language gained from hand-parsed sentences to try to produce the most likely analysis of new sentences. These statistical parsers still make some mistakes, but commonly work rather well. Their development was one of the biggest breakthroughs in natural language processing in the 1990s.
 
 ## Run on your machine

@@ -187,4 +187,4 @@ advmod(fine-7, also-5)
 root(ROOT-0, fine-7)
 ```
 ## Tips
-If you want to use <code>&</code> in your sentence encode the input. For example 'cat & mouse' should be <code>cat%20%26%20mouse</code>.
+If you want to use special characters like <code>&</code> in your sentence encode the input. For example 'cat & mouse' should be <code>cat%20%26%20mouse</code>.

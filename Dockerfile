@@ -24,7 +24,7 @@ RUN chmod +x /usr/local/bin/composer
 
 # Put data into container
 WORKDIR /var/www/html
-RUN git clone https://github.com/alen-z/php-stanford-nlp-docker
+RUN git clone https://github.com/alen-z/php-stanford-nlp-docker .
 
 # Stanford NLP PHP wrapper
 RUN composer install

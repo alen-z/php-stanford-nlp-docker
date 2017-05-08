@@ -28,7 +28,5 @@ ADD . /var/www/html
 # Stanford NLP PHP wrapper
 WORKDIR /var/www/html
 RUN composer install
-
 # Java app
-WORKDIR /var/www/html/src
 RUN wget https://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip && unzip stanford-parser-full-2016-10-31.zip

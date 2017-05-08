@@ -2,9 +2,6 @@
 # Official PHP image https://hub.docker.com/_/php/
 FROM php:5.6.30-apache
 
-# Additional metadata
-MAINTAINER Alen Zubic <alen.zubic@srce.hr>
-
 # Backports
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
 

@@ -134,10 +134,8 @@ foreach ($iterator as $key => $value) {
 $result['legend'] = $explanation;
 $result['query'] = $sentence;
 
-echo "<pre>";
 if ($raw === 'true') {
     echo $parser->getOutput();
 } else {
     echo json_encode($result, JSON_PRETTY_PRINT);
 }
-echo "</pre>";

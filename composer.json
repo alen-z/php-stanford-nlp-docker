@@ -1,0 +1,5 @@
+{
+  "require": {
+    "agentile/php-stanford-nlp": "dev-master"
+  }
+}
